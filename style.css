@@ -1,0 +1,81 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+.head{
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:50px;
+    color:rgb(28, 28, 28);
+    opacity: 0.9;
+ 
+   
+}
+.welcome{
+    backdrop-filter: blur(20px);
+    text-align: center;
+    background: rgb(255, 255, 255,0.137);
+    font-size: 50px;
+    padding: 100px 100px 100px 100px;
+}
+
+.topbar{
+    background-color: #1572A1;
+    height: 50px;
+    
+}
+
+.logo{
+    height: 30px;
+    width:30px;
+    margin-top: 10px;
+    margin-left:50px;
+}
+
+.txtclinic{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    margin-top:10px ;
+    margin-left:1px;
+}
+
+.dropdown-menu{
+    background-color: #1572A1;
+}
+.dropdown-item{
+    color: rgb(0, 0, 0);
+}
+
+/*ghgjj*/
+.textserv{
+    text-align: center;
+    padding:10px ;
+}
+.txt{
+    background-color: #1572A1;
+    padding: 5px;
+}
+
+.card{
+    padding:5px;
+    margin: 2px 10px 2px 50px;
+    border:#1572A1;
+    box-shadow: 10px;
+}
+.more{
+    background-color: #1572A1;
+    color: white;
+}
+.teambut{
+    background-color: #1572A1;
+    margin-left: 575px;
+    color:rgb(0, 0, 0);
+}
+.loc{
+    background-color: #1572A1;
+}
+.foot{
+    background-color: #1572A1;
+    text-align: center;
+}

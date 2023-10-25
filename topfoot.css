@@ -1,0 +1,44 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+
+.topbar{
+    background-color: #1572A1;
+    height: 50px;
+    
+}
+
+.logo{
+    height: 30px;
+    width:30px;
+    margin-top: 10px;
+    margin-left:50px;
+}
+
+.txtclinic{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    margin-top:10px ;
+    margin-left:1px;
+}
+
+.dropdown-menu{
+    background-color: #1572A1;
+}
+.dropdown-item{
+    color: rgb(0, 0, 0);
+}
+
+/*ghgjj*/
+
+
+
+
+
+/**/
+.foot{
+    background-color: #1572A1;
+    text-align: center;
+}

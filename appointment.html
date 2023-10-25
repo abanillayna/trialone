@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="cliniclogo.jpg" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="topfoot.css">
+    <script src="appointment.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ 
+
+    <title>BOOK AN APPOINTMENT</title>
+</head>
+
+<body style="background-color:#9AD0EC">
+
+<!--Top-->
+<div class="container-fluid topbar">
+    <div class="row">
+      <div class="col-md-1">
+        <a href="index.html"><img src="cliniclogo.jpg " class="logo rounded-pill"> </a>  
+      </div>
+  
+      <div class="col-md-6">
+        <a href="index.html" style="text-decoration: none; "><i><p class="txtclinic">KLINIKA NI DR. ASHENG</p></i></a>
+      </div>
+  
+      <div class="col-md-1 mt-3 h">                       
+        <a class="nav-link" href="index.html" style="text-decoration: none; ">Home</a>                      
+      </div>
+  
+      <div class="col-md-1 mt-3">  
+        <div class=" dropdown">
+          <button type="button" class="btn dropdown-toggle nav-link" data-bs-toggle="dropdown">
+            Services
+          </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="braces.html">Braces</a></li>
+              <li><a class="dropdown-item" href="crowns.html">Crowns/Veneers</a></li>
+              <li><a class="dropdown-item" href="dentalimplant.html">Dental Implant</a></li>
+              <li><a class="dropdown-item" href="invisalign.html">Invisalign</a></li>
+              <li><a class="dropdown-item" href="gumcon.html">Gum Contouring</a></li>
+              <li><a class="dropdown-item" href="rootcanal.html">Root Canal Treatment</a></li>
+              <li><a class="dropdown-item" href="tmj.html">TMJ Treatment</a></li>
+              <li><a class="dropdown-item" href="xray.html">X-ray-CBT,Panoramic</a></li>
+              <li><a class="dropdown-item" href="zoomteeth.html">Zoom Teeth Whitening</a></li>
+              <li><a class="dropdown-item" href="dentures.html">Dentures</a></li>
+           </ul>
+        </div>
+      </div>
+  
+      <div class="col-md-1 mt-3">                       
+        <a class=" nav-link" href="appointment.html" style="text-decoration: none;" >Appointment</a>                      
+      </div>
+  
+      <div class="col-md-1 mt-3">                       
+        <a class="nav-link" href="contactus.html" style="text-decoration: none; ">Contact Us</a>                      
+      </div>
+  
+      <div class="col-md-1 mt-3">                       
+        <a class="nav-link" href="index.html" style="text-decoration: none; ">About Us</a>                      
+      </div>
+    </div>  
+  </div>
+<!---->
+
+<!--Form-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mt-3" style="margin: 2px 300px 2px 300px; padding: 10px;" >
+            
+                    <form class="form-control" style="background-color: white; margin: 2px; padding: 10px;">
+                        <fieldset class="form-control">
+                            <legend class="form-control" style="text-align: center; margin: 2px; padding: 2px;">BOOK AN APPOINTMENT</legend>
+
+                                <label class="mb-2" style="margin:15px 20px 2px 2px; padding: 2px 2px 2px 2px;">Choose a Date:</label>
+                                <input class="dte" type="date" placeholder="Choose a date" style="margin:15px 2px 2px 2px;" id="dte" onclick="dte()">
+                                
+                                <br><br>
+
+                                <div class="btn-group-sm" role="group" style="margin:2px 5px 2px 28px;">
+                                    <button type="button" class="nine btn btn-primary" onclick="nine()">9:00 AM</button>
+                                    <button type="button" class="ten btn btn-primary " onclick="ten()">10:00 AM</button>
+                                    <button type="button" class="eleven btn btn-primary" onclick="eleven()">11:00 AM</button>
+                                    <button type="button" class="one btn btn-primary" onclick="one()">1:00 PM</button>
+                                    <button type="button" class="two btn btn-primary" onclick="two()">2:00 PM</button>
+                                    <button type="button" class="three btn btn-primary" onclick="three()">3:00 PM</button>
+                                </div>
+                        </fieldset>
+                    </form>
+        </div>
+
+        <div class="col-sm-6 mt-3" style="margin: 2px 300px 2px 300px; padding: 10px;" >
+                    <form id="abc" class="needs-validation" novalidate>
+                       <fieldset class="form-control ">
+                            <legend class="form control" style="text-align: center; font-size: 17px; margin:5px;">Enter your Information</legend>
+                            
+                                <form class="needs-validation" novalidate>
+                                        <div>
+                                        <label for="fname" class="form-label">First Name:</label>
+                                        <input type="text" class="form-control" id="fname" disabled required>
+                                            <div class="valid-feedback"> Valid first name.</div>
+                                            <div class="invalid-feedback">Put your first name.</div>
+                                        </div>
+                                            <br>
+                                        <div>
+                                        <label for="lname" class="form-label">Last Name:</label>
+                                        <input type="text" class="form-control" id="lname" disabled required>
+                                        <div class="valid-feedback"> Valid last name.</div>
+                                        <div class="invalid-feedback">Put a your last name.</div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                        <label for="email" class="form-label">Email:</label>
+                                            <div class="input-group has-validation">
+                                            <span class="input-group-text" id="emailmo">@</span>
+                                                <input type="text" class="form-control" id="validemail" aria-describedby="emailmo" disabled required>
+                                                    <div class="invalid-feedback"> Please choose a username.</div>
+                                                    <div class="valid-feedback"> Valid username</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                        <label for="phone" class="form-label">Phone Number:</label>
+                                        <input type="text" class="form-control" id="phone" name="phonen" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" disabled required>
+                                        <div class="valid-feedback"> Valid Phone Number</div>
+                                        <div class="invalid-feedback">Put a your valid phone number.</div>
+                                        </div>
+                                        <br>
+                               
+                                        <button class="btn btn-primary" type="submit " disabled>BOOK</button>
+                                
+                              </form>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--StartFooter-->
+<div class="container-fluid p-4 mt-3 foot">
+    <div class="row">
+      <div class="col-sm-12 ">
+        <img src="cliniclogo.jpg" style="width: 200px; height: 200px; text-align: center;" class="rounded-pill">
+          <div class="row">
+            <div class="col-sm-12 p-1 mt-2">
+                <p style="font-style: italic; color: white;">&copy 2023 All Rights Reserved.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+
+<script>
+      (function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+
+
+
+</body>
+</html>
